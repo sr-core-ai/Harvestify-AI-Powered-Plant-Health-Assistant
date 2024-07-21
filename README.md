@@ -1,68 +1,165 @@
-# Harvestify: AI-Powered Plant Health Assistant
+# Harvestify 🌱  
+### AI-Powered Plant Health Assistant
 
-![Harvestify Banner](/Web%20App%20Interface.png)
+![Harvestify Banner](./Web%20App%20Interface.png)
 
-## Introduction
+Harvestify is an AI-powered web application designed to help farmers, gardeners, and agricultural enthusiasts monitor and improve plant health through intelligent disease detection and crop management recommendations.
 
-Welcome to **Harvestify: AI-Powered Plant Health Assistant**! This application is designed to help gardeners and farmers keep their plants healthy by leveraging advanced AI and machine learning technologies. With Harvestify, you can simply upload a photo of your plant's leaf, and our app will instantly diagnose any diseases and provide treatment suggestions.
+By leveraging machine learning and computer vision technologies, Harvestify enables users to upload plant leaf images and receive instant disease diagnosis, treatment suggestions, fertilizer recommendations, and crop guidance based on environmental conditions.
 
-## Features
+---
 
-- **Disease Detection**: Upload a photo of a plant leaf, and Harvestify will identify any diseases and provide detailed information about them.
-- **Crop Recommendation**: Get recommendations for the best crops to plant based on soil and weather conditions.
-- **Fertilizer Suggestion**: Receive personalized fertilizer suggestions to enhance plant growth and health.
-- **Real-Time Analysis**: Instant analysis of plant health with quick and accurate results.
-- **User-Friendly Interface**: Simple and intuitive interface for easy navigation and use.
+# 🚀 Features
 
-## Installation
+## 🌿 Plant Disease Detection
+Upload a plant leaf image and receive:
+- Disease prediction
+- Confidence analysis
+- Treatment recommendations
+- Preventive guidance
 
-To get started with Harvestify locally, follow these steps:
+## 🌾 Crop Recommendation
+Get smart crop suggestions based on:
+- Soil conditions
+- Weather data
+- Environmental factors
 
-1. **Clone the repository**:
-    ```sh
-    git clone https://github.com/MGJillaniMughal/Harvestify-AI-Powered-Plant-Health-Assistant.git
-    ```
-2. **Navigate to the project directory**:
-    ```sh
-    cd Harvestify-AI-Powered-Plant-Health-Assistant
-    ```
-3. **Install the required dependencies**:
-    ```sh
-    pip install -r requirements.txt
-    ```
-4. **Set up environment variables**:
-    - Create a `.env` file in the root directory.
-    - Add the necessary environment variables (e.g., API keys, secret keys).
+## 🧪 Fertilizer Recommendation
+Receive personalized fertilizer suggestions to:
+- Improve crop yield
+- Enhance plant growth
+- Maintain soil health
 
-## Usage
+## ⚡ Real-Time AI Analysis
+Fast and accurate AI-powered predictions with responsive performance.
 
-1. **Run the application locally**:
-    ```sh
-    python app.py
-    ```
-2. **Access the application**:
-    - Open your web browser and go to `http://localhost:5000`.
+## 🎨 User-Friendly Interface
+Clean and intuitive interface designed for ease of use across all user levels.
 
-3. **Upload an Image**:
-    - Navigate to the "Disease Detection" page.
-    - Upload a photo of the plant leaf you want to analyze.
-    - Click "Submit" to get the disease prediction and treatment suggestions.
+---
 
-## Deployment on Microsoft Azure
+# 🛠️ Tech Stack
 
-Harvestify is also hosted on Microsoft Azure. You can access the live application [here](https://salmon-river-0feb8641e.5.azurestaticapps.net/).
+### Frontend
+- HTML5
+- CSS3
+- JavaScript
 
-To deploy the application to Azure, follow these steps:
+### Backend
+- Python
+- Flask
 
-1. **Create an Azure App Service** and configure it for a Python web app.
-2. **Deploy the code**:
-    - You can use Azure DevOps, GitHub Actions, or any other CI/CD tool to automate the deployment process.
-    - Alternatively, you can manually deploy using FTP, Git, or ZIP deployment.
+### Machine Learning
+- TensorFlow
+- Scikit-learn
+- ResNet50
 
-3. **Configure environment variables** in Azure App Service settings.
-4. **Ensure all dependencies** are specified in the `requirements.txt` file.
+### Database & Storage
+- Pickle Models
+- HDF5 Models
 
-## Project Structure
+### Cloud & Deployment
+- Microsoft Azure
+
+---
+
+# 📦 Installation
+
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/MGJillaniMughal/Harvestify-AI-Powered-Plant-Health-Assistant.git
+```
+
+## 2. Navigate to the Project Directory
+
+```bash
+cd Harvestify-AI-Powered-Plant-Health-Assistant
+```
+
+## 3. Create a Virtual Environment (Optional but Recommended)
+
+### Windows
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### macOS / Linux
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+## 4. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## 5. Configure Environment Variables
+
+Create a `.env` file in the root directory and add the required configuration values:
+
+```env
+SECRET_KEY=your_secret_key
+API_KEY=your_api_key
+```
+
+---
+
+# ▶️ Running the Application
+
+Start the Flask development server:
+
+```bash
+python app.py
+```
+
+The application will be available at:
+
+```bash
+http://localhost:5000
+```
+
+---
+
+# 📸 How to Use
+
+1. Open the application in your browser.
+2. Navigate to the **Disease Detection** section.
+3. Upload a plant leaf image.
+4. Submit the image for analysis.
+5. View disease predictions and treatment recommendations instantly.
+
+---
+
+# ☁️ Deployment
+
+Harvestify is deployed on Microsoft Azure:
+
+🌐 Live Demo:  
+https://salmon-river-0feb8641e.5.azurestaticapps.net/
+
+## Azure Deployment Overview
+
+The application can be deployed using:
+- Azure App Service
+- GitHub Actions
+- Azure DevOps
+- ZIP or FTP deployment
+
+### Deployment Steps
+
+1. Create an Azure App Service
+2. Configure Python runtime
+3. Add environment variables
+4. Deploy application source code
+5. Install dependencies from `requirements.txt`
+
+---
+
+# 📁 Project Structure
 
 ```plaintext
 Harvestify-AI-Powered-Plant-Health-Assistant/
@@ -81,43 +178,65 @@ Harvestify-AI-Powered-Plant-Health-Assistant/
 │   ├── fertilizer-result.html
 │   └── disease-result.html
 │
-├── app.py
-├── requirements.txt
 ├── models/
 │   ├── resnet50_model.h5
 │   ├── RandomForest.pkl
 │   └── ...
 │
+├── app.py
+├── requirements.txt
 └── README.md
 ```
-## Contributing
-
-We welcome contributions to Harvestify! To contribute:
-
-1. **Fork the repository**.
-2. **Create a new branch**:
-    ```sh
-    git checkout -b feature/your-feature-name
-    ```
-3. **Make your changes** and **commit them**:
-    ```sh
-    git commit -m "Add your commit message"
-    ```
-4. **Push to the branch**:
-    ```sh
-    git push origin feature/your-feature-name
-    ```
-5. **Create a pull request**.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-
-## Acknowledgements
-
-- Thanks to all the contributors who have made this project possible.
-- Special thanks to the AI and machine learning communities for their support and resources.
 
 ---
 
-Let's keep our plants healthy together with Harvestify!
+# 🤝 Contributing
+
+Contributions are welcome and appreciated.
+
+## Contribution Workflow
+
+1. Fork the repository
+2. Create a feature branch
+
+```bash
+git checkout -b feature/your-feature-name
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "feat: add new feature"
+```
+
+4. Push to your branch
+
+```bash
+git push origin feature/your-feature-name
+```
+
+5. Open a Pull Request
+
+---
+
+# 📄 License
+
+This project is licensed under the MIT License.
+
+See the [LICENSE](LICENSE) file for more details.
+
+---
+
+# 🙌 Acknowledgements
+
+Special thanks to:
+- Open-source contributors
+- TensorFlow and Scikit-learn communities
+- Agricultural AI research communities
+- Everyone supporting AI innovation in agriculture
+
+---
+
+# 🌱 Harvestify
+
+Empowering smarter agriculture through AI-driven plant health intelligence.
