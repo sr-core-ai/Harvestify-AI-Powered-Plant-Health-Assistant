@@ -240,4 +240,3 @@ Special thanks to:
 # 🌱 Harvestify
 
 Empowering smarter agriculture through AI-driven plant health intelligence.
-
