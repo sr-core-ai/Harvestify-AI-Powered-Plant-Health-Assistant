@@ -194,31 +194,6 @@ Harvestify-AI-Powered-Plant-Health-Assistant/
 
 Contributions are welcome and appreciated.
 
-## Contribution Workflow
-
-1. Fork the repository
-2. Create a feature branch
-
-```bash
-git checkout -b feature/your-feature-name
-```
-
-3. Commit your changes
-
-```bash
-git commit -m "feat: add new feature"
-```
-
-4. Push to your branch
-
-```bash
-git push origin feature/your-feature-name
-```
-
-5. Open a Pull Request
-
----
-
 # 🙌 Acknowledgements
 
 Special thanks to:
